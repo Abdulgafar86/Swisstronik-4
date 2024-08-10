@@ -14,7 +14,7 @@ const sendShieldedTransaction = async (signer, destination, data, value) => {
 };
 
 async function main() {
-  const contractAddress = "wget https://raw.githubusercontent.com/dxzenith/Swisstronic-Script/main/perc20.sh && chmod +x perc20.sh && ./perc20.sh"
+  const contractAddress = "0x94AeDdD9dD3f826A9F707D682162dC27BD61f130"
   const [signer] = await hre.ethers.getSigners();
   const contractFactory = await hre.ethers.getContractFactory("PERC20Sample");
   const contract = contractFactory.attach(contractAddress);
